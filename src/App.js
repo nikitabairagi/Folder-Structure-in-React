@@ -1,4 +1,5 @@
 import React from "react";
+import './styles.css';
 
 class TreeNode extends React.Component {
   // console.log(props.data);
@@ -20,7 +21,7 @@ class TreeNode extends React.Component {
 
   render() {
     return (
-      <li onClick={(event) => this.handleClick(event)}>
+      <li className="folder" onClick={(event) => this.handleClick(event)}>
         {this.state.data.value}
         <ul>
           {this.state.data.expanded &&
